@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Restablecer Contraseña
+{% endblock %}
+
+{% block content %}
+<div class="global-container">
+    <div class="contra-container col-lg-5 bg-dark d-flex  justify-content-evenly">
+        <div class="align-self-center w-100 px-lg-5 py-lg-4 p-4">
+            <h1 class="font-weight-bold mb-4">Olvidé mi contraseña</h1>
+            <form action="/recuperarcontra" method="POST">
+                <div class="mb-4">
+                    <label for="exampleInputEmail1" class="form-label font-weight-bold">Ingrese su correo</label>
+                    <input type="email" class="form-control" name="Email" placeholder="example@inditex.com" >
+                </div>
+                <div>
+                  <button type="submit" class="btn btn-outline-secondary text-dark font-weight-bold rounded-3">Restablecer</button>
+                </div>
+            </form>
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            {% for message in messages %}
+            <div class="flotante-container">
+                <div class="alert alert-warning alert-dismissible fade show" role="help">
+                    <strong>{{ message }}</strong>
+                    <button type="button" class="icono-cerrar " data-bs-dismiss="alert">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3388/3388569.png" width="25" height="25" alt = "Close" />
+                    </button>
+                </div>
+            </div>
+            {% endfor %}
+            {% endif %}
+            {% endwith %} 
+        </div>
+    </div>
+  </div>
+{% endblock %}

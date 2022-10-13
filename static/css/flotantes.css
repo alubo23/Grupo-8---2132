@@ -1,0 +1,29 @@
+.flotante-container{
+    z-index: 99;
+    height: 10vh;
+    width: 80vh;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px 0px 0px 0px;
+    align-items: center;
+    justify-items: center;
+}
+
+
+.icono-cerrar {
+    background-color:transparent;
+    border: none;
+}
+.icono-cerrar:hover{
+    background-color: rgb(134, 126, 47);
+}
+
+
+.alert-warning{
+    background-color: rgb(238, 220, 58);
+    font-weight: 500;
+    color: black;
+    z-index: 99;
+}

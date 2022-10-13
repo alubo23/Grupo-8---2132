@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Validar Cuenta
+{% endblock %}
+
+{% block content %}
+<div class="global-container">
+    <div class="activar-container col-lg-5 bg-dark d-flex  justify-content-evenly">
+        <div class="align-self-center w-100 px-lg-5 py-lg-4 p-4">
+            <h1 class="font-weight-bold mb-4">Activación de cuenta</h1>
+            <form action="/activarCuenta" method="POST">
+                <div class="mb-4">
+                    <label for="exampleInputEmail1" class="form-label font-weight-bold">Ingrese su usuario</label>
+                    <input type="text" class="form-control bg-light text-dark border-0" name="Usuario" placeholder="example">
+                </div>
+                <div class="mb-4">
+                    <label for="exampleInputEmail1" class="form-label font-weight-bold">Ingrese Codigo de Activacion</label>
+                    <input type="text" class="form-control bg-light text-dark border-0" name="Codigo" placeholder="2022------">
+                </div>
+                <div>
+                    <button type="submit" class="btn btn-outline-secondary text-dark font-weight-bold rounded-3">Activar</button>
+                </div>
+            </form>
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+            {% for message in messages %}
+            <div class="flotante-container">
+                <div class="alert alert-warning alert-dismissible fade show" role="help">
+                    <strong>{{ message }}</strong>
+                    <button type="button" class="icono-cerrar " data-bs-dismiss="alert">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3388/3388569.png" width="25" height="25" alt = "Close" />
+                    </button>
+                </div>
+            </div>
+            {% endfor %}
+            {% endif %}
+            {% endwith %} 
+        </div>
+    </div>
+</div>
+{% endblock %}

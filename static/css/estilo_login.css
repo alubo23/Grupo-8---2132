@@ -1,0 +1,54 @@
+.login-container{
+    height: 85vh;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -50%);
+    border-radius: 0px 30px 30px 0px;
+    color: blanchedalmond;
+    padding: 0px 0px 0px 0px;
+}
+.bienvenida{
+    border-style: solid;
+    border-color: #343A40;
+    height: 85vh;
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+    border-radius: 30px 0px 0px 30px;
+    padding: 0px 0px 0px 0px;
+}
+
+.logo{
+   
+    color: #343A40;
+    text-align: center;
+    
+}
+
+
+form {
+    padding-top: 20px;
+    font-size: 16px;
+    margin-top: 30 px;  
+}
+
+.btn{
+    background-color: cyan;
+    border-color: cyan;
+    font-size: 16 px;
+    transform: translateY(10px);
+}
+.textfor{
+    font-size:  16 px;
+    color: cyan;
+}
+.Crear-cuenta{
+    text-align: center;
+    padding-top: 25 px;
+    font-size: 16px;
+    transform: translateY(30px);
+}

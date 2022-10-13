@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}
+LBPH Mensajeria
+{% endblock %}
+
+{% block content %}
+
+<header class="header bg-dark">
+    <nav>
+       <ul class="nav-links">
+            <li><a href="#">Bandeja Entrada</a></li>
+            <li><a href="#">Escribir Nuevo Mensaje</a></li>
+       </ul>            
+    </nav>
+    <a class="button-ingresar" href="http://127.0.0.1:5000/login">
+        <button>INGRESAR 
+            <svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 2H30C31.6569 2 33 3.34315 33 5V29C33 30.6569 31.6569 32 30 32H16C14.3431 32 13 30.6569 13 29V24H12H11V29C11 31.7614 13.2386 34 16 34H30C32.7614 34 35 31.7614 35 29V5C35 2.23858 32.7614 0 30 0H16C13.2386 0 11 2.23858 11 5V10H12H13V5C13 3.34315 14.3431 2 16 2Z" fill="whitesmoke"/>
+                <path d="M25.7071 17.7071C26.0976 17.3166 26.0976 16.6834 25.7071 16.2929L19.3431 9.92893C18.9526 9.53841 18.3195 9.53841 17.9289 9.92893C17.5384 10.3195 17.5384 10.9526 17.9289 11.3431L23.5858 17L17.9289 22.6569C17.5384 23.0474 17.5384 23.6805 17.9289 24.0711C18.3195 24.4616 18.9526 24.4616 19.3431 24.0711L25.7071 17.7071ZM-3.45071e-10 18L25 18L25 16L3.45071e-10 16L-3.45071e-10 18Z" fill="whitesmoke"/>
+                </svg>
+        </button></a>
+</header>
+
+<h1> TEXTO DE EJEMPLO</h1>
+
+
+
+{% endblock %}

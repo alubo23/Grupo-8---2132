@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Recuperar Contraseña
+{% endblock %}
+
+{% block content %}
+<div class="global-container">
+    <div class="login-container col-lg-5 bg-dark d-flex  justify-content-evenly">
+        <div class="align-self-center w-100 px-lg-5 py-lg-4 p-4">
+            <h1 class="font-weight-bold mb-4">Olvidé mi contraseña</h1>
+            <form>
+                <div class="mb-4">
+                    <label for="exampleInputEmail1" class="form-label font-weight-bold">Ingrese su correo</label>
+                    <input type="email" class="form-control bg-light text-dark border-0" id="exampleInputEmail1" placeholder="example@inditex.com" aria-describedby="emailHelp">
+                </div>
+              <div>
+                <button type="submit" class="btn btn-outline-secondary text-dark font-weight-bold rounded-3">Recuperar</button>
+              </div>
+            </form>
+        </div>
+    </div>
+  </div>
+{% endblock %}
